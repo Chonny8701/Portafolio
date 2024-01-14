@@ -1,0 +1,88 @@
+.card-body .item, .col-about-me .item{
+  margin-bottom: 30px;
+}
+.col-about-me{
+  background-color: white;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: none;
+  padding: 20px;
+  transition: 0.5s;
+}
+.col-about-me:hover{
+  color: white;
+  background-color: rgba(31, 32, 41);
+}
+.list-experiencia-item{
+  margin-bottom: 20px;
+}
+li .negrita{
+margin-left: 20px;
+}
+/* Barras de Habilidades */
+.u-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.skill {
+  margin: 0.6em 0;
+  position: relative;
+  width: 50vh;
+}
+.skill__type {
+  text-align: left;
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: .145em;
+  text-transform: uppercase;
+  width: 5em;
+}
+.skill__outer-bar,
+.skill__inner-bar {
+  height: .75em;
+}
+.skill__outer-bar {
+  margin-top: 0.5em;
+  background: #333;
+}
+.skill__inner-bar {
+  animation: fillBar 1s forwards;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+.skill__inner-bar--html {
+  width: 90%;
+  background: #FF5722;
+}
+.skill__inner-bar--css {
+  width: 80%;
+  background: #1640ab;
+}
+.skill__inner-bar--js {
+  width: 80%;
+  background: #FFDF00;
+}
+.skill__inner-bar--bootstrap {
+  width: 70%;
+  background: #8718F8;
+}
+.skill__inner-bar--react {
+  width: 75%;
+  background: #53b5fc;
+}
+.skill__inner-bar--git {
+  width: 70%;
+  background: #f15233;
+}
+@keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}

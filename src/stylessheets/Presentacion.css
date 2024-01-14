@@ -1,0 +1,30 @@
+#img-perfil{
+  width: 300px;
+}
+#img-hand{
+  width: 2.5em;
+}
+.seccion-1 h1{
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+  vertical-align: auto;
+}
+
+.presentacion-icono-linkedin, .presentacion-icono-github{
+  color: rgba(31, 32, 41, 0.85);
+  transition: 0.3s ease-in-out;
+}
+.presentacion-icono-linkedin:hover{
+  color: #0077B5;
+  border-radius: 5px;
+  background-color: white;
+}
+.presentacion-icono-github:hover{
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+}

@@ -1,0 +1,30 @@
+.general{
+  margin-bottom: 100px;
+}
+.contenedor-barra{
+  border-radius: 100px;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  background-color: rgba(31, 32, 41);
+}
+.nav-link{
+  position: relative;
+}
+.nav-link::before{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all .3s;
+}
+.nav-link:hover:before{
+  width: 100%;
+}
+.navbar-brand{
+  /* font-family: 'Dancing Script', cursive; */
+  font-weight: 600;
+}

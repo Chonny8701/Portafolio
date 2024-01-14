@@ -1,0 +1,63 @@
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 20s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-90px * 14))}	// ((ancho imagen) + (gap)) * cantidad_imagenes
+}
+
+// Styling
+.slider {
+	background: #1f2029;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	border-radius: 5px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 80px;			//Suma de la altura de la imagen + el padding = 60(imagen) + 20(padding-top) +20(padding-bottom)
+		position: absolute;
+		width: 70px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		box-sizing: border-box;
+		padding: 20px;
+		gap: 40px;
+		width: calc(50px * 14);
+	}
+	
+	.slide {
+		height: 40px;
+		width: 50px;
+	}
+
+	.slide img{
+		height: 40px;
+		width: 50px;
+		border-radius: 10px;
+	}
+}

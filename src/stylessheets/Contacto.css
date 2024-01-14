@@ -1,0 +1,55 @@
+.seccion-4 .item{
+  margin-bottom: 30px;
+}
+.contacto-columna-1{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.contacto-columna-2{
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(31, 32, 41);;
+  border-radius: 10px;
+}
+.icono-linkedin, .icono-github{
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.icono-linkedin:hover{
+  color: #0077B5;
+  border-radius: 5px;
+  background-color: white;
+}
+.icono-github:hover{
+  color: rgb(72, 72, 72);
+  border-radius: 50%;
+  background-color: white;
+}
+.card-contacto{
+  color: white;
+  width: 240px;
+  display: flex;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.card-contacto:hover {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+.contacto-item{
+  text-align: justify;
+}
+
+@media (max-width: 991.98px) {
+  .contacto-fila-1 {
+    gap: 20px;
+    background-color: rgb(214, 214, 214);
+    padding-top: 50px;
+    border-radius: 10px;
+  }
+}
