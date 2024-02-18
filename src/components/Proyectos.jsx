@@ -56,7 +56,7 @@ const Proyectos = () => {
             <div className="d-flex justify-content-around"  style={{margin:"30px"}}>
               <div className="proyectos-icono" onClick={openModalProyecto1}> Description <MdOutlineDescription   size={25} /></div>
               <a className="proyectos-icono" href="https://github.com/Chonny8701/FART" target="_blank"> Code <FaGithub  size={25} /></a>
-              <a className="proyectos-icono" href="https://0373-139-47-122-206.ngrok-free.app" target="_blank"> Live Demo <FaExternalLinkAlt  size={25} /></a>
+              <a className="proyectos-icono" href="https://16e0-139-47-122-206.ngrok-free.app" target="_blank"> Live Demo <FaExternalLinkAlt  size={25} /></a>
             </div>
             {/* <Button variant="dark" onClick={openModalProyecto1}>Show Details</Button> */}
           </Card.Body>
@@ -68,7 +68,7 @@ const Proyectos = () => {
             <div className="d-flex justify-content-around"  style={{margin:"30px"}}>
               <div className="proyectos-icono" onClick={openModalProyecto2}> Description <MdOutlineDescription   size={25} /></div>
               <a className="proyectos-icono" href="https://github.com/Chonny8701/TradingBot" target="_blank"> Code <FaGithub  size={25} /></a>
-              <a className="proyectos-icono" href="https://00d6-139-47-122-206.ngrok-free.app" target="_blank"> Live Demo <FaExternalLinkAlt  size={25} /></a>
+              <a className="proyectos-icono" href="https://6ccf-139-47-122-206.ngrok-free.app" target="_blank"> Live Demo <FaExternalLinkAlt  size={25} /></a>
             </div>
             {/* <Button variant="dark" onClick={openModalProyecto2}>Show Details</Button> */}
           </Card.Body>
@@ -80,7 +80,7 @@ const Proyectos = () => {
             <div className="d-flex justify-content-around"  style={{margin:"30px"}}>
               <div className="proyectos-icono" onClick={openModalProyecto3}> Description <MdOutlineDescription   size={25} /></div>
               <a className="proyectos-icono" href="https://github.com/Chonny8701/CYR" target="_blank"> Code <FaGithub  size={25} /></a>
-              <a className="proyectos-icono" href="https://d35b-139-47-122-206.ngrok-free.app" target="_blank"> Live Demo <FaExternalLinkAlt  size={25} /></a>
+              <a className="proyectos-icono" href="https://cad4-139-47-122-206.ngrok-free.app" target="_blank"> Live Demo <FaExternalLinkAlt  size={25} /></a>
             </div>
             {/* <Button variant="dark" onClick={openModalProyecto3}>Show Details</Button> */}
           </Card.Body>
